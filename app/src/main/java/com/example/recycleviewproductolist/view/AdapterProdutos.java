@@ -3,6 +3,7 @@ package com.example.recycleviewproductolist.view;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +36,7 @@ public class AdapterProdutos extends RecyclerView.Adapter<AdapterProdutos.Produt
         holder.mTextViewDescricao.setText(produto.getDescricao());
         holder.mTextViewNomeProduto.setText(produto.getNome());
         holder.mTextViewValor.setText(String.format("R$ %.2f", produto.getValor()));
+        holder.mImageView.setImageResource(produto.getImagem());
     }
 
     @Override
@@ -54,12 +56,13 @@ public class AdapterProdutos extends RecyclerView.Adapter<AdapterProdutos.Produt
     //Classe que vincula cada elemento de layout ao viewHolder
     public static class ProdutoViewHolder extends RecyclerView.ViewHolder {
         TextView mTextViewNomeProduto, mTextViewValor, mTextViewDescricao;
-
+        ImageView mImageView;
         public ProdutoViewHolder(@NonNull View itemView) {
             super(itemView);
             mTextViewNomeProduto = itemView.findViewById(R.id.nomeProduto);
             mTextViewValor = itemView.findViewById(R.id.valor);
             mTextViewDescricao = itemView.findViewById(R.id.descricao);
+            mImageView = itemView.findViewById(R.id.imagemProduto);
         }
     }
 

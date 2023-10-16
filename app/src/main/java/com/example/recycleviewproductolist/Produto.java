@@ -1,16 +1,40 @@
 package com.example.recycleviewproductolist;
 
+import android.widget.ImageView;
+
 public class Produto {
 
     private String nome;
     private String descricao;
     private float valor;
+    private int imagem;
 
-    public Produto(String nome, String descricao, float valor) {
+    public Produto(String nome, String descricao, float valor, int imagem) {
         this.nome = nome;
         this.descricao = descricao;
         this.valor = valor;
+        this.imagem = imagem;
     }
+
+    public Produto() {
+    }
+
+    public Produto(String nomeProduto, String descricaoProduto, float valor) {
+        this.nome = nomeProduto;
+        this.descricao = descricaoProduto;
+        this.valor = valor;
+    }
+
+    public int getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(int imagem) {
+        this.imagem = imagem;
+    }
+
+
+
 
     public float getValor() {
         return valor;

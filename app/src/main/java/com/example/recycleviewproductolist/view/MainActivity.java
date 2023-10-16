@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        produtoList.add(new Produto("nomeProduto1", "descricaoProduto1", 0.5f));
-        produtoList.add(new Produto("nomeProduto2", "descricaoProduto2", 0.6f));
-        produtoList.add(new Produto("nomeProduto3", "descricaoProduto3", 0.7f));
+        produtoList.add(new Produto("nomeProduto1", "descricaoProduto1", 0.5f, R.drawable.ic_launcher_background));
+        produtoList.add(new Produto("nomeProduto2", "descricaoProduto2", 0.6f, R.drawable.ic_launcher_background));
+        produtoList.add(new Produto("nomeProduto3", "descricaoProduto3", 0.7f, R.drawable.ic_launcher_background));
         produtoList.add(new Produto("nomeProduto4", "descricaoProduto4", 0.8f));
         produtoList.add(new Produto("nomeProduto5", "descricaoProduto5", 0.9f));
         produtoList.add(new Produto("nomeProduto6", "descricaoProduto6", 1.5f));
