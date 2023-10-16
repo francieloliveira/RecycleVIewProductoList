@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/itemView"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/lblProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/produto"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/nomeProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nome_do_produto">
+            </TextView>
+            <TextView
+                android:id="@+id/lblValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pre_o"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/valor">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/lblDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descri_o"
+                android:textSize="20sp">
+            </TextView>
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/descri_o_do_produto">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
