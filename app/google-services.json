@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986537360237",
+    "project_id": "recycleviewproductolist",
+    "storage_bucket": "recycleviewproductolist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986537360237:android:e9833361c7b383bef77864",
+        "android_client_info": {
+          "package_name": "com.example.recycleviewproductolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK73EQx30owVoXQKZACs3JkYpUWwRsQis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
